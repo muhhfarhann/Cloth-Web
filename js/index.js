@@ -1,5 +1,14 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    loadPage(1); // Load page 1 by default
+document.addEventListener('DOMContentLoaded', function() {
+    const chartButton = document.getElementById('chart');
+    const chartList = document.getElementById('chart-list');
+
+    chartButton.addEventListener('click', function() {
+      if (chartList.style.display === 'block') {
+        chartList.style.display = 'none';
+      } else {
+        chartList.style.display = 'block';
+      }
+    });
 });
 
 function loadPage(pageNumber) {
