@@ -28,11 +28,10 @@ body{
 
 .container .content{
     background-color: rgba(255, 255, 255, 0.582);
-    width: 500px;
+    width: 1000px;
     height: 350px;
     margin: auto;
-    padding: 1rem 1rem;
-    border-radius: 5%;
+    padding: 1rem 7% 1rem;
     box-shadow: 0px 40px 30px -20px black;
     border: solid 1px black;
     display: flex;
