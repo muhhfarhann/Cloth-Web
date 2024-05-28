@@ -20,15 +20,24 @@ body{
 
 /* Chart List */
 #chart-list {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     right: -100%;
-    width: 30rem;
-    height: 100vh;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 #chart-list.active {
     right: 0;
+}
+
+.chart-items {
+    max-height: calc(100vh - 50px); /* Adjust based on the header size */
+    overflow-y: auto;
 }
 
 /* hero */

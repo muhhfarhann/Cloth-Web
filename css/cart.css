@@ -26,7 +26,7 @@ body{
 
 /* table */
 form .container .table tbody tr td{
-    border-right: .5px solid black;
+    /* border-right: .5px solid black; */
 }
 
 /* Cart total */
