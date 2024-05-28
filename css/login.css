@@ -1,0 +1,65 @@
+:root{
+    --primary: #cfc8be;
+    --bg: #000;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Montserrat','Lato';
+    font-size: 10pt;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar .container .navbar-collapse ul li a:hover{
+    color: green;
+    transform: scale(1.1);
+}
+
+/* Hero */
+.hero {
+    width: 100%; /* Set width to 100% to cover the full width of the viewport */
+    height: 100vh; /* Set height to 100vh to cover the full height of the viewport */
+    padding-top: 8rem;
+    background-image: url('../img/hero-2.jpg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; /* Ensures the background image covers the entire hero section */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.hero .content {
+    background-color: rgba(16, 75, 99, 0.98); /* Use rgba for background color to maintain opacity */
+    width: 500px;
+    height: 350px;
+    border-radius: 5%;
+    box-shadow: 0px 40px 30px -20px black;
+    border: solid 1px black;
+    color: #fff;
+    text-align: center; /* Ensure text is centered */
+    display: flex; /* Use flexbox to center the form content */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Vertically center the form content */
+}
+
+.hero .content .row p {
+    text-shadow: 2px 2px rgb(53, 53, 53);
+    font-size: 12pt;
+}
