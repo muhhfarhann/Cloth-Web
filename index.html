@@ -48,43 +48,23 @@
     <!-- Hero -->
     <section class="hero border">
         <main class="content">
-            <div class="row">
-                <h1 class="text-center"><span class="text-success">Login</span></h1>
-                <p style="font-style: italic; color: red;">please valid input</p>
-            </div>
-            <div class="row ms-auto justify-content-center">
-                <div class="col-md-10">
-                    <form action=" " method="post">.
-                        <div class="row">
-                            <div class="col-md-6 text-start">
-                                <div class="mb-3">
-                                    <label for="username" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="username" aria-describedby="username" name="username" autofocus>
-                                </div>
-                                <div class="-mb-4">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control mb-4" id="password" name="password">
-                                    <button type="submit" class="btn btn-success text-white" name="submit">Login</button>
-                                    <!-- Tambahkan ikon putar di bawah -->
-                                    <div class="spinner-border text-light d-none" role="status" id="loginSpinner">
-                                        <span class="visually-hidden">Loading...</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-start">
-                                <div class="mb-3">
-                                    <label for="role" class="form-label">Who's?</label>
-                                    <input type="text" class="form-control" id="role" name="role" placeholder="Ex ADMIN">
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="Check">
-                                    <label class="form-check-label" for="Check" name="check">Check me out</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+            <h1 class="text-center"><span class="text-success">Login</span></h1>
+            <p style="font-style: italic; color: red;">please valid input</p>
+            <div class="row ms-auto align-items-end mb-2 p-2">
+                <div class="col-md">
+                    <label for="Username">Username :</label>
+                    <input class="form form-control-sm" type="text" name="username" id="Username" placeholder="username" required autofocus autocomplete="off">
                 </div>
-            </div> 
+                <div class="col-md">
+                    <input class="form form-control-sm"  type="text" name="username" id="Username" placeholder="role" required autocomplete="off">
+                </div>
+            </div>
+            <div class="row ms-auto align-items-end mb-2 p-2">
+                <div class="col-md-5">
+                    <label for="Username">Password :</label>
+                    <input class="form form-control-sm"  type="password" name="username" id="Username" placeholder="password" required autocomplete="off">
+                </div>
+            </div>
         </main>
     </section>
     <!-- End Hero -->

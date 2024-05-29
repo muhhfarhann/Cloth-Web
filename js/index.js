@@ -1,3 +1,13 @@
+// Navbar scroll
+  // JavaScript to add/remove scrolled class based on scroll position
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('navbar-dark', 'bg-dark');
+    } else {
+        navbar.classList.remove('navbar-dark', 'bg-dark');
+    }
+});
 // Chart lIST
 document.getElementById('chart').addEventListener('click', function() {
     document.getElementById('chart-list').classList.toggle('active');
