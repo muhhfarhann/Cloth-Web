@@ -65,7 +65,8 @@
     <!-- Main Start -->
     <main id="main" class="main">
         <div class="container">
-            <h1>Cart</h1>    
+            <h1>Cart</h1>   
+            <p>Your cart</p> 
         </div>
     </main>
     <!-- Main End -->
@@ -99,6 +100,12 @@
                             </label>
                           </td>
                         </tr>
+                        <tr>
+                          <td colspan="6">
+                            <h6 class="float-start me-5">Total :</h6>
+                            <p>$150.000</p>
+                          </td>
+                        </tr>
                       </form>
                 </table>
                 <div class="row text-end">
@@ -109,10 +116,11 @@
                         </form>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-outline-success btn-sm">UPDATE</button>
+                        <!-- send to function -->
+                        <a href="#function?=" type="submit" class="btn btn-outline-success btn-sm">UPDATE</a>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-outline-success btn-sm">Delete</button>
+                        <a href="#functionDelete?=" type="submit" class="btn btn-outline-success btn-sm">Delete</a>
                     </div>
                 </div>
             </div>
@@ -122,15 +130,11 @@
 
     <!-- Cart total -->
     <section id="ct" class="ct">
-        <div class="container w-25">
+        <div class="container w-25 p-3">
             <h4>CART TOTAL</h4>
             <form action="" method="post">
                 <table class="table table-hover">
                     <tbody>
-                        <tr class="">
-                            <td>Subtotal</td>
-                            <td>$150.000</td>
-                        </tr>
                         <tr>
                             <td>Total</td>
                             <td>$150.000</td>

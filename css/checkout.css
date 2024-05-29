@@ -37,8 +37,9 @@ body{
 #content .container h1 {
     width: 100%;
     margin-bottom: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid black;
+    text-align: center;
 }
 
 #content .container .row { 
@@ -55,10 +56,16 @@ body{
     list-style-type: none;
 }
 
-#content .container .row .col ul li a {
+#content .container .row .col ul li img {
     margin-left: -2rem;
     text-decoration: none;
     color: red;
+    transition: .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#content .container .row .col ul li img:hover {
+    transform: scale(1.5);
+    bottom: -50;
 }
 
 /* Footer */

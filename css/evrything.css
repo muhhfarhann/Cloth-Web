@@ -113,6 +113,16 @@ body{
     border-color: #28a745;
   }
 
+  .product-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .product-link img, .product-link h4, .product-link p, .product-link button {
+    pointer-events: none;
+  }
+  
+
 /* content */
 #content {
     background-color: rgb(25 29 111);

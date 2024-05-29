@@ -1,3 +1,4 @@
+// Chart lIST
 document.getElementById('chart').addEventListener('click', function() {
     document.getElementById('chart-list').classList.toggle('active');
 });
@@ -84,46 +85,23 @@ function loadPage(pageNumber) {
     paginationItems[pageNumber - 1].classList.add('active');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const checkBank = document.getElementById('checkBank');
-    const checkPay = document.getElementById('checkPay');
-    const checkCod = document.getElementById('checkCod');
-    const checkPal = document.getElementById('checkPal');
+function updateShipping() {
+    var paymentMethod = document.getElementById('paymentmethod').value;
+    var ongkirElement = document.getElementById('Ongkir');
+    var subtotal = 150000; // assuming the subtotal is $150.000
+    var ongkir = 0; // default shipping cost for non-COD
+    var totalPaymentElement = document.getElementById('totalPayment');
 
-    checkBank.addEventListener('change', function() {
-        showAlert('checkBank');
-    });
-
-    checkPay.addEventListener('change', function() {
-        showAlert('checkPay');
-    });
-
-    checkCod.addEventListener('change', function() {
-        showAlert('checkCod');
-    });
-
-    checkPal.addEventListener('change', function() {
-        showAlert('checkPal');
-    });
-});
-
-function showAlert(radioId) {
-    const alertContainer = document.getElementById('alert-container');
-    let message = '';
-
-    if (radioId === 'checkBank') {
-        message = 'Make your payment directly into our bank account!';
-    } else if (radioId === 'checkPay') {
-        message = 'Please check field!';
-    } else if (radioId === 'checkCod') {
-        message = 'Pay With Cash Upon Delivery';
-    }else if (radioId === 'checkPal') {
-        message = 'Pay with paypal you can pay with yout credit card if you dont have paypall account';
+    if (paymentMethod == '1') { // COD selected
+      ongkir = 12; 
+    } else if (paymentMethod == '2') { // PayPal selected
+      ongkir = 0; 
     }
 
-    alertContainer.innerHTML = `
-        <div class="alert alert-danger" role="alert">
-            ${message}
-        </div>
-    `;
-}
+    // Update the shipping cost
+    ongkirElement.textContent = `$${ongkir}`;
+
+    // Update the total payment
+    var totalPayment = subtotal + ongkir;
+    totalPaymentElement.textContent = `$${totalPayment.toFixed(3)}`;
+  }
