@@ -48,6 +48,7 @@
     <!-- Hero -->
     <section class="hero border">
         <main class="content">
+          <form action="" method="post">
             <h1 class="text-center"><span class="text-success">Login</span></h1>
             <p style="font-style: italic; color: red;">please valid input</p>
             <div class="row ms-auto justify-content-center align-items-end mb-4">
@@ -62,6 +63,13 @@
                     <input class="form form-control-sm"  type="password" name="username" id="Username" placeholder="password" required autocomplete="off">
                 </div>
             </div>
+            <div class="row ms-auto justify-content-center align-items-end mb-2">
+                <div class="col-md-5">
+                    <a href="signUp.html" class="text-white mb-2" style="text-decoration: none;" onclick=" return confirm('SignUp?'); ">Have Account?</a>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+          </form>
         </main>
     </section>
     <!-- End Hero -->

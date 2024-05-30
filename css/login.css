@@ -46,18 +46,18 @@ body{
 }
 
 .hero .content {
-    color: #fff;
+    color: #000;
     width: 500px;
     height: 350px;
     border-radius: 5%;
     text-align: start; /* Ensure text is centered */
     border: 1px solid black;
-    background-color: rgba(16, 75, 99, 0.98); /* Use rgba for background color to maintain opacity */
+    background-color: rgb(203 210 213 / 62%); /* Use rgba for background color to maintain opacity */
     box-shadow: 0px 40px 30px -20px black;
 }
 
 .hero .content p {
-    text-shadow: 2px 2px rgb(53, 53, 53);
+    text-shadow: rgb(53, 53, 53) 1px 1px;
     font-size: 12pt;
     text-align: center;
 }
